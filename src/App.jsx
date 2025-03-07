@@ -9,8 +9,10 @@ import { Layout } from './pages/Layout';
 function App() {
   return (
     <>
-      <div>
-        <h1>Routes</h1>
+      <header className="bg-white text-black text-center py-3 mt-4 ">
+            <h1>Bienvenidos a: </h1>
+      </header>
+        <h3>Routes</h3>
         <Layout></Layout>
         <Routes>
           <Route path="Dashboard" element={ <Dashboard/> }></Route>
@@ -19,7 +21,11 @@ function App() {
           <Route path="Perfil" element={ <Perfil/> }></Route>
           <Route path="*" element={ <Home/> }></Route>
           </Routes>
-      </div>
+        <footer className="bg-white text-black text-center py-3 mt-4">
+          <div className="container">
+              <p>&copy; Pedro Gomez A01027841 </p>
+          </div>
+        </footer>
     </>
   )
 }
